@@ -1,4 +1,5 @@
 # compiled output
+dist/
  
 # dependencies
 node_modules/
@@ -10,5 +11,8 @@ yarn-error.log*
  
 #System Files
 .DS_Store
+Thumbs.db
+package-lock.json
  
 # Editor directories and files
+
