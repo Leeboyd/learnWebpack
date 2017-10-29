@@ -1,0 +1,51 @@
+/* 可能會微調 bootstrap 的 grid system */
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+/* RWD */
+@mixin smbelow {
+   @media (max-width: ($screen-md - 1)){
+    @content;
+  }
+}
+@mixin smabove {
+   @media (min-width: $screen-sm){
+    @content;
+  }
+}
+@mixin xs {
+   @media (max-width: ($screen-sm - 1)){
+    @content;
+  }
+}
+@mixin xxs {
+   @media (max-width: ($screen-xs - 1)){
+    @content;
+  }
+}
+@mixin sm {
+   @media (min-width: $screen-sm) and (max-width: ($screen-md - 1)){
+    @content;
+  }
+}
+@mixin md {
+   @media (min-width: $screen-md){
+    @content;
+  }
+}
+@mixin lg {
+   @media (min-width: $screen-lg){
+    @content;
+  }
+}
+@mixin lgbelow {
+  @media  (max-width: ($screen-lg - 1)){
+   @content;
+  }
+}
+@include sm {
+  .container {
+    width: 100%;
+  }
+};

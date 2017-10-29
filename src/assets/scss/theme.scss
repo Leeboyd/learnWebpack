@@ -1,0 +1,89 @@
+/* 專案多頁共用到的特效樣式 */
+[class*="yt-theme-hover-"] {
+  transition: $transition-time/2;
+}
+
+.yt-theme-hover-color-blue {
+  &:hover {
+    color: $color-blue !important;
+  }
+}
+
+.yt-theme-hover-color-blue-dark {
+  &:hover {
+    color: $color-blue-dark !important;
+  }
+}
+
+.yt-theme-hover-color-orange {
+  &:hover {
+    color: $color-orange !important;
+  }
+}
+
+.yt-theme-hover-bg-blue-mid {
+  &:hover {
+    background: $color-blue-mid !important;
+  }
+}
+
+.yt-theme-hover-bg-orange-dark {
+  &:hover {
+    background: $color-orange-dark !important;
+  }
+}
+
+.yt-theme-box-shadow {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.yt-theme-font-title {
+  @include font(26px,35px,#000);
+}
+
+.yt-theme-font-list {
+  @include font(16px,22px,#000);
+}
+
+.yt-theme-font-date {
+  @include font(14px,21px,#9b9b9b);
+}
+
+.yt-theme-more {
+  @include font(14px,19px,$color-blue !important);
+}
+
+.yt-theme-button-orange {
+  @include font(16px,50px,$color-orange !important);
+  border: 1px solid $color-orange;
+  width: 218px;
+  transition: $transition-time;
+
+  &:hover {
+    color: #fff !important;
+    background: $color-orange;
+  }
+}
+
+.yt-comparison-list {
+  flex: 1 0 0;
+  animation-name: yt-push;
+  animation-duration: .5s;
+  @keyframes yt-push {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.yt-scrollbar-face-color {
+  scrollbar-face-color: $color-blue-light;
+}

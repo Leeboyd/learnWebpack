@@ -1,0 +1,38 @@
+/* ${專案} 多頁共用到的一般樣式 */
+/* ${專案} 在此為 yt */
+html {
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: $font-family;
+  font-size: 16px;
+  color: #000;
+  background: #f7f7f7;
+}
+
+.yt-page {
+  margin: 50px 0 100px;
+  @include sm {
+    margin-bottom: 172px;
+  };
+  @include lg {
+    margin: 60px 0 80px;
+  };
+}
+
+/* 蓋在 banner 上 */
+.yt-has-banner-float {
+  position: relative;
+  @include md {
+    margin-top: -48px;
+  };
+}
+
+/* 較小內容 */
+.yt-container {
+  @include md {
+    padding: 0 30px;
+  };
+}
